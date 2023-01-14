@@ -1,0 +1,16 @@
+parameters:
+  placeholder.empty_string: ''
+  placeholder.true: true
+  placeholder.false: false
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: true
+
+  SomeBdyElse\SymfonyEnvVariables\:
+    resource: '../Classes/*'
+
+  SomeBdyElse\SymfonyEnvVariables\EnvironmentVariables\EnvironmentVariableRetreiver:
+    arguments:
+      $processors: '@container.env_var_processors_locator'

@@ -1,0 +1,26 @@
+{
+	"name": "somebdyelse/typo3-symfony-env-vars",
+	"description": "TYPO3 Extension that replaces the stock environment variable processor by Symfony's",
+	"authors": [
+		{
+			"name": "Hannes Lau",
+			"email": "office@hanneslau.de"
+		}
+	],
+	"type": "typo3-cms-extension",
+	"license": "GPL-2.0-or-later",
+	"require": {
+		"symfony/dependency-injection": "^5.4",
+		"typo3/cms-core": "^11.5.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"SomeBdyElse\\SymfonyEnvVariables\\": "Classes/"
+		}
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "symfony_env_variables"
+		}
+	}
+}
