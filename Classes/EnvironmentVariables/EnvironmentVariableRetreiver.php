@@ -9,6 +9,8 @@ use Symfony\Component\DependencyInjection\ServiceLocator;
 
 class EnvironmentVariableRetreiver
 {
+    protected \Closure $getEnv;
+
     public function __construct(
         protected ContainerInterface $container,
         protected ServiceLocator $processors,
