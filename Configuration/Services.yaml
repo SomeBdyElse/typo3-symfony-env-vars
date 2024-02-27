@@ -11,6 +11,9 @@ services:
   SomeBdyElse\SymfonyEnvVariables\:
     resource: '../Classes/*'
 
+  Symfony\Component\DependencyInjection\ContainerInterface: '@service_container'
+
   SomeBdyElse\SymfonyEnvVariables\EnvironmentVariables\EnvironmentVariableRetreiver:
     arguments:
+      $container: '@service_container'
       $processors: '@container.env_var_processors_locator'
