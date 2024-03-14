@@ -2,7 +2,7 @@
 
 use SomeBdyElse\SymfonyEnvVariables\PlaceholderProcessor\EnvironmentVariablePlaceholderProcessor;
 
-defined('TYPO3_MODE') or die();
+defined('TYPO3') or die();
 
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['yamlLoader']['placeholderProcessors'][EnvironmentVariablePlaceholderProcessor::class] = [
     'before' => [
