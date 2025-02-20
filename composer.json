@@ -10,7 +10,7 @@
 	"type": "typo3-cms-extension",
 	"license": "GPL-2.0-or-later",
 	"require": {
-		"symfony/dependency-injection": "^5.4 || ^6.3",
+		"symfony/dependency-injection": "^5.4 || ^6.3 || ^7.2",
 		"typo3/cms-core": "^11.5.0 || ^12.4"
 	},
 	"autoload": {
